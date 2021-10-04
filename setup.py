@@ -222,7 +222,7 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     entry_points={"console_scripts": ["feast=feast.cli:cli"]},
-    use_scm_version={"root": "../..", "relative_to": __file__, "tag_regex": TAG_REGEX},
+    use_scm_version=False,
     setup_requires=["setuptools_scm", "grpcio", "grpcio-tools==1.34.0", "mypy-protobuf", "sphinx!=4.0.0"],
     package_data={
         "": [
